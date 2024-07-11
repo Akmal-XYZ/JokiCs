@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9B_qhIPhHXhn9-ReYvZnKqwIkHifC2jnHZQ&usqp=CAU');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<center>
+				<h2>JOKI CS BY AKMAL SHELLBY</h2>
+			
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joki Cs Samp</title>
+<style>
+    #name-form {
+        display: block;
+    }
+    #animal-display {
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <form id="name-form" onsubmit="return showAnimal(event)">
+        <label for="name">Masukkan Nama Ic Anda:</label> <br>  <br>
+        <input type="text" id="name" required>
+        
+        
+<br>
+<br>
+<br>
+        <button type="submit"><h7>Create</button>
+    </form>
+
+    <div id="animal-display">
+        <h4 id="greeting">
+<span id="nama"></span> adalah seorang pria berusia 28 tahun yang lahir dan dibesarkan di Los Santos. Dia berasal dari keluarga kelas menengah dan memiliki mimpi untuk menjadi salah satu penyelundup narkoba terbesar di kota ini. Dalam menjalani hidupnya, <span id="nama"></span> terkenal karena kecerdasannya dalam menjalankan transaksi narkoba yang kompleks dan kemampuannya untuk melewati perangkap aparat penegak hukum.
+
+<span id="nama"></span> tumbuh dalam lingkungan yang keras dan sulit, di mana ia sering melihat teman-temannya terjerumus ke dalam dunia kejahatan. Namun, ia memilih untuk tetap fokus pada impian dan tujuan hidupnya, yang sejak kecil sudah jelas terpatri dalam benaknya. <span id="nama"></span> belajar banyak hal tentang dunia kriminal dari menjaga rahasia hingga berbicara dalam kode-kode yang hanya dimengerti oleh sesama penjahat.
+
+Perjalanan Karakter:
+<span id="nama"></span> mulai merintis karirnya sebagai penjual narkoba kecil-kecilan. Dengan keahliannya dalam bertransaksi secara diam-diam dan kemampuannya untuk menghindari aparat keamanan, <span id="nama"></span> mulai meraih sukses dalam bisnisnya. Namun, ia tidak merasa puas dengan apa yang sudah dicapainya. Ia bermimpi untuk mengendalikan seluruh pasar narkoba di Los Santos.
+
+Tanpa sepengetahuan dan persetujuan dari geng yang telah lama mengendalikan perdagangan narkoba di kota ini, <span id="nama"></span> mulai merebut kekuasaan dengan cara lamanya yang licik dan cerdas. Ia mengatur pertemuan tersembunyi dengan para bos besar dan membuktikan kemampuannya untuk memberikan keuntungan yang cukup besar. <span id="nama"></span> tidak ingin menjadi penjahat kecil, tapi ia bercita-cita untuk menjadi seorang legenda dalam dunia kriminal Los Santos.
+
+Pada babak baru kehidupannya, <span id="nama"></span> melanjutkan perjalanan cerdiknya untuk merampas kekuasaan. Dia mengajak rekan-rekannya untuk membentuk geng yang baru dan memulai perang melawan geng yang telah lama berkuasa. Dengan kecerdikannya dalam menjalankan operasi-operasi ilegal, memperoleh informasi dan menghindari perangkap yang diletakkan oleh polisi, <span id="nama"></span> semakin dekat dengan tujuannya untuk menjadi bos narkoba terbesar di kota ini.
+
+Namun, semakin tingginya posisinya juga semakin banyak musuh yang mengincarnya. Dia harus berjuang keras untuk mempertahankan wilayah yang sudah dikuasainya dan mengendalikan geng serta anggota bawahannya. Dalam perjalanan ini, <span id="nama"></span> menghadapi situasi-situasi yang berbahaya dan konflik yang semakin memanaskan perang jalanan Los Santos. Apakah dia dapat mencapai tujuannya atau harus menyerah di tengah jalan?
+
+Di tengah keinginan untuk menjadi bos narkoba terbesar, <span id="nama"></span> harus menghadapi konsekuensi moral dari pilihannya. Ia harus mempertimbangkan kembali apakah kekuasaan dan kekayaan sesuai dengan harga yang harus dibayar atau tidak. Apakah <span id="nama"></span> akan tetap menjadi sosok yang kejam dan tak kenal ampun, atau akan ada perubahan dalam hidupnya?
+
+<span id="nama"></span> adalah karakter yang kompleks dengan ambisi besar dan impian yang harus diwujudkan dalam dunia kriminal Los Santos. Dalam perjalanannya, dia akan menghadapi ujian moral dan berbagai tantangan yang harus diatasi. Hanya waktu yang akan menjawab apakah <span id="nama"></span> dapat mencapai tujuan dan menjaga pilihannya, atau apakah ia akan terjebak dalam lingkaran kejahatan yang tak berkesudahan.</h4>
+        <h1 id="animal"></h1>
+        
+        <button onclick="resetForm()">Back</button>
+    </div>
+
+    <script>
+        const animals = ['Siluman Pcsi', 'Kontol Ikan', 'Peler Messi', 'Memek Mulet', 'Titit Skay', 'Kak Gem Kerbau', 'Rawa Rontek Singa Vetigo', 'Sigit Rendang', 'Pipa Paralon', 'Kadal Ritat', 'Monyet Kebon', 'Bulos Ireng', 'Sigma Skibidi', 'Silit', 'Lele Sungai Berantas', 'Jembut Kepang', 'Peler Keriting'];
+
+        function showAnimal(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const randomIndex = Math.floor(Math.random() * animals.length);
+            const randomAnimal = animals[randomIndex];
+
+            document.getElementById('nama').innerText = name;
+            document.getElementById('animal').innerText = randomAnimal;
+
+            document.getElementById('name-form').style.display = 'none';
+            document.getElementById('animal-display').style.display = 'block';
+        }
+
+        function resetForm() {
+            document.getElementById('name-form').reset();
+            document.getElementById('name-form').style.display = 'block';
+            document.getElementById('animal-display').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+</center>
+
+<style>
+			label{
+			color: white;
+			}
+			h3{
+			color: white;
+			</style>
+			
+			
+			<style>
+    @keyframes colorBlink {
+      0%, 100% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+      33% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+      66% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+    }
+
+    h2 {
+      animation: colorBlink 3s infinite;
+      				
+								
+
+
+
+
+
+}
+@keyframes colorBlink {
+      0%, 100% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+      33% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+      66% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+    }
+
+    h4 {
+      animation: colorBlink 3s infinite;
+      				
+      				}
+								
+								
+								button {
+        background-color: #00ffee;
+        color: white;
+        padding: 15px 15px; 
+        margin: 7px 0px;
+        
+        cursor: pointer;
+        width: 30px 50px;
+        font-size: 16px;
+        border-radius: 20px;
+        }
+    
+     input {
+  background-color: #00000000;
+  color: #fff; /* Ini untuk mengubah warna teks menjadi putih agar kontras dengan latar belakangnya */
+  padding: 10px 20px;
+}
+::placeholder {
+    color: white; /* warna placeholder */
+}
+
+h7{
+color: black;
+
+}
+h1 {
+  display: none;
+}
+
+</style>
+
+
+  
+  
+  
+  
+  
+  
